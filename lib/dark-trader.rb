@@ -13,9 +13,11 @@ doc.css('.cmc-main-section table tr.cmc-table-row').each do |data|
     p = String.new
  data.css('td.cmc-table__cell--sort-by__symbol div').each do |symbol|
    s = symbol.content
+   print s + " = "
   end
   data.css('div.price___3rj7O a.cmc-link').each do |price|
     p = price.content[1,10].to_f
+    puts p
    end
    
    h = {s => p}

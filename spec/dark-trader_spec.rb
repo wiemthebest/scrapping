@@ -9,6 +9,5 @@ describe "check the function return acceptable result" do
   it "check empty result" do
     expect(crypto_scrapper().count > 3).to eq true
     expect(crypto_scrapper().first.include?("BTC")).to eq true
-    #price.eql?(price.to_int)
   end
 end
