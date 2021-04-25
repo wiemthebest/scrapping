@@ -31,6 +31,7 @@ def get_townhall_email(townhall_url)
  h = { 
   "first_name" => firstName,
   "last_name" => lastName,
+  
   "email" => email
 }
 rescue => e
